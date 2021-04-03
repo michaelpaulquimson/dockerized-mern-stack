@@ -1,0 +1,19 @@
+version: '3'
+services:
+  server:
+    restart: always
+    build: .
+    ports:
+      - '3000:3000'
+    links:
+      - mongo
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: pass
+      MONGO_INITDB_DATABASE: movies
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./init-mongo:/docker-entrypoint-initdb.d
