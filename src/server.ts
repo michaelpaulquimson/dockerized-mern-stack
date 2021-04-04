@@ -1,19 +1,9 @@
 const app = require('./app');
-const mongoose = require('mongoose');
-const { mongoUri, PORT } = require('./config');
+const { PORT } = require('./config');
+const { mongoDB } = require('./db/mongo');
 
-mongoose
-  .connect(mongoUri,
-    { 
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false
-    }
-  )
-  .then(() => console.log('MongoDB connected...'))
-  .catch((err) => console.log(err));
+mongoDB();
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+	console.log(`Server running on port ${PORT}`);
 });
