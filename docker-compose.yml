@@ -12,7 +12,7 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: pass
-      MONGO_INITDB_DATABASE: movies
+      MONGO_INITDB_DATABASE: musics
     ports:
       - '27017:27017'
     volumes:
