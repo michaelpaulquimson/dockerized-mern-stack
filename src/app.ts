@@ -17,6 +17,15 @@ app.use((req: Request, res: Response) => {
 });
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+app.use((req: Request, res: Response, next: NextFunction) => {
+	const error = new Error('Not found');
+	res.status(404).json({
+		status: 404,
+		message: error.message
+	});
+});
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 app.use(function (err, req: Request, res: Response, next: NextFunction) {
   res.status(500).json({ status: 500, error: 'Server error' });
 });
