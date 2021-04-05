@@ -13,7 +13,7 @@ const SongSchema = new Schema({
     type: String,
     required: true,
   }
-});
+}, { timestamps: true });
 
 const Song = model('song', SongSchema);
 
