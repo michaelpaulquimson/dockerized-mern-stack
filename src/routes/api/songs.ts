@@ -8,6 +8,10 @@ router.get('/', async (req: Request, res: Response, next: NextFunction) => {
 	SongsService.getAllSongs(req, res, next);
 });
 
+router.get('/q', async (req: Request, res: Response, next: NextFunction) => {
+	SongsService.filterSongsByQueryParams(req, res, next);
+});
+
 router.post('/', songValidationRules(), validateSong, async (req: Request, res: Response, next: NextFunction) => {
 	SongsService.createSong(req, res, next);
 });
