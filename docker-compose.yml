@@ -19,7 +19,7 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: pass
-      MONGO_INITDB_DATABASE: musics
+      MONGO_INITDB_DATABASE: songs
     ports:
       - '27017:27017'
     volumes:
