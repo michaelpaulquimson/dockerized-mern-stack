@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run lint && npx ts-node src/server.ts",
-    "lint": "npx eslint src"
+    "start": "npm run lint && npx ts-node server/server.ts",
+    "lint": "npx eslint server"
   },
   "keywords": [],
   "author": "",
