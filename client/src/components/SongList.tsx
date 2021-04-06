@@ -8,13 +8,14 @@ interface Props {
 
 const SongList: React.FC<Props> = ({ SongList }) => {
 	function renderSongList() {
+		if (SongList.length === 0) return <div>No songs found</div>;
 		return SongList.map(song => {
 			return (
 				<div key={song._id}>
-					<div>{song._id}</div>
-					<div>{song.name}</div>
-					<div>{song.artist}</div>
-					<div>{song.genre}</div>
+					<div>ID - {song._id}</div>
+					<div>NAME - {song.name}</div>
+					<div>ARTIST - {song.artist}</div>
+					<div>GENRE - {song.genre}</div>
 				</div>
 			);
 		});
