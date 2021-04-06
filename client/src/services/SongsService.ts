@@ -56,7 +56,8 @@ const SongsService = {
 				`${process.env.REACT_APP_BASE_URL}/api/songs`,
 				requestOptions
 			);
-			const createdSong = response;
+			const payload = await response.json();
+			const createdSong = payload.createdSong;
 			return createdSong;
 		} catch (error) {
 			return console.log(error);
@@ -74,7 +75,8 @@ const SongsService = {
 				`${process.env.REACT_APP_BASE_URL}/api/songs/${id}`,
 				requestOptions
 			);
-			const updatedSong = response;
+			const payload = await response.json();
+			const updatedSong = payload.updatedSong;
 			return updatedSong;
 		} catch (error) {
 			return console.log(error);
@@ -91,7 +93,8 @@ const SongsService = {
 				`${process.env.REACT_APP_BASE_URL}/api/songs/${id}`,
 				requestOptions
 			);
-			const deletedSong = response;
+			const payload = await response.json();
+			const deletedSong = payload.deletedSong;
 			return deletedSong;
 		} catch (error) {
 			return console.log(error);
