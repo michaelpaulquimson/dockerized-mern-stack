@@ -1,38 +1,22 @@
 [
 	{
-			"_id": "606c8d6dac2e340041b54422",
 			"name": "Skies",
 			"artist": "One Direction",
-			"genre": "Pop",
-			"createdAt": "2021-04-06T16:33:49.590Z",
-			"updatedAt": "2021-04-06T17:22:42.347Z",
-			"__v": 0
+			"genre": "Pop"
 	},
 	{
-			"_id": "606c8d6eac2e340041b54423",
 			"name": "Blue",
 			"artist": "One Direction",
-			"genre": "Love",
-			"createdAt": "2021-04-06T16:33:50.297Z",
-			"updatedAt": "2021-04-06T17:22:14.468Z",
-			"__v": 0
+			"genre": "Love"
 	},
 	{
-			"_id": "606c8d6fac2e340041b54424",
 			"name": "Skies",
 			"artist": "Nsync",
-			"genre": "Pop",
-			"createdAt": "2021-04-06T16:33:51.059Z",
-			"updatedAt": "2021-04-06T17:24:19.088Z",
-			"__v": 0
+			"genre": "Pop"
 	},
 	{
-			"_id": "606c9921c8eda70041c8fb83",
 			"name": "Bye Bye Bye",
 			"artist": "Backstreet Boys",
-			"genre": "Pop",
-			"createdAt": "2021-04-06T17:23:45.434Z",
-			"updatedAt": "2021-04-06T17:23:45.434Z",
-			"__v": 0
+			"genre": "Pop"
 	}
 ]
