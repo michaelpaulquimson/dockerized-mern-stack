@@ -1,0 +1,8 @@
+* {
+	all: unset;
+	display: revert;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
