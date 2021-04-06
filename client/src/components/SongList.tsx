@@ -16,6 +16,7 @@ const SongList: React.FC<Props> = ({ SongList }) => {
 					<div>NAME - {song.name}</div>
 					<div>ARTIST - {song.artist}</div>
 					<div>GENRE - {song.genre}</div>
+					<br />
 				</div>
 			);
 		});
