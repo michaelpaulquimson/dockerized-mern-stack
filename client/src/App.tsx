@@ -1,9 +1,10 @@
 import React from 'react';
+import SongContainer from './containers/SongContainer';
 
 const App: React.FC = () => {
 	return(
 		<>
-			<h1>React App</h1>
+			<SongContainer />
 		</>
 	);
 };
