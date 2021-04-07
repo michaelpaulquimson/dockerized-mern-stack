@@ -27,7 +27,7 @@ interface Props {
 
 const FeaturedPlaylists: React.FC<Props> = ({ FeaturedPlaylists }) => {
 	function renderFeaturedPlaylists() {
-		if (FeaturedPlaylists.length === 0) return <div className="m-8">No featured playlist found</div>;
+		if (FeaturedPlaylists.length === 0) return <div className="m-auto p-8">No featured playlist found</div>;
 		return FeaturedPlaylists.map(featuredPlaylist => {
 			return (
 				<div key={featuredPlaylist.name}>
