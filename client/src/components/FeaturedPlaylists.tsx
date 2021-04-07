@@ -21,6 +21,7 @@ const FeaturedPlaylists: React.FC<Props> = ({ FeaturedPlaylists }) => {
 	}
 	return (
 		<>
+			<h1>Featured Playlists</h1>
 			{renderFeaturedPlaylists()}
 		</>
 	);
