@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Container, Header } from '../components/layouts/LayoutStyles';
+import { Container, Header } from './layouts/Styles';
 
 const Image = styled.img`
 	height: 150px;
