@@ -1,12 +1,15 @@
-* {
-	all: unset;
-	display: revert;
-}
-
 *, *::before, *::after {
 	box-sizing: border-box;
 }
 
-.m-8 {
-	margin: 8px;
+.m-auto {
+	margin: auto;
+}
+
+.p-8 {
+	padding: 8px;
+}
+
+.text-center {
+	text-align: center;
 }
